@@ -225,10 +225,19 @@ export default function Home() {
       {/* Contact Section */}
       <section className="bg-white p-6 rounded-lg shadow-sm">
         <h2 className="text-2xl font-bold mb-4 text-red-600">{translations.contact.title}</h2>
-        <div className="space-y-2">
-          <p className="text-gray-700">📧 fatihq1810@gmail.com</p>
-          <p className="text-gray-700">🔗 LinkedIn: www.linkedin.com/in/fatih-sarıtaş-b93306287 </p>
-          <p className="text-gray-700">💻 GitHub: https://github.com/FatihSaritas </p>
+        <div className="space-y-4">
+          <a href="mailto:fatihq1810@gmail.com" className="flex items-center space-x-2 text-gray-700 hover:text-red-600 transition-colors">
+            <img src="/email.svg" alt="Email" className="w-6 h-6" />
+            <span>fatihq1810@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/fatih-sarıtaş-b93306287" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-gray-700 hover:text-red-600 transition-colors">
+            <img src="/linkedin.svg" alt="LinkedIn" className="w-6 h-6" />
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/FatihSaritas" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-gray-700 hover:text-red-600 transition-colors">
+            <img src="/github.svg" alt="GitHub" className="w-6 h-6" />
+            <span>GitHub</span>
+          </a>
         </div>
       </section>
     </div>
